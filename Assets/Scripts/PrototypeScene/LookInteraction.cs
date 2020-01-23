@@ -8,10 +8,12 @@ public class LookInteraction : MonoBehaviour
     public GameObject bridge;
     public GameObject exitPoint;
     public NavMeshAgent agent;
-    public GameObject Player;
+    public GameObject player;
 
     public AudioClip challengeAudio;
     public AudioSource compainion;
+
+    public GameObject warpingFixPoint;
 
     void OnTriggerEnter(Collider other)
     {
@@ -22,9 +24,10 @@ public class LookInteraction : MonoBehaviour
             bridge.SetActive(true);
             agent.SetDestination(exitPoint.transform.position);
             print(agent.destination);
-            Player.GetComponent<Stage2>().enabled = true;
+            player.GetComponent<Stage2>().enabled = true;
             compainion.clip = challengeAudio;
             compainion.Play();
+            agent.Warp(warpingFixPoint.transform.position);
         }
     }
 

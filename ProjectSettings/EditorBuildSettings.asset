@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/AlphaPrototypeScene/PrototypeScene.unity
-    guid: a7d4fd22e4bf66b46b87cf6b07dbf952
+    path: Assets/Scenes/RiverScene.unity
+    guid: 9062c90940fbaa34c9a02f1717ef7e0e
+  - enabled: 1
+    path: Assets/Scenes/TownTradingScene.unity
+    guid: 4ad9184f17a7c3c4f8a15fa56d952fa5
   m_configObjects: {}

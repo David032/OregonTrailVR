@@ -120,7 +120,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 09480756f71ee3f459a4998e5e12b82f, type: 2}
 --- !u!1001 &88037206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -131,6 +131,10 @@ PrefabInstance:
     - target: {fileID: 1325099026768116, guid: f877ba9d08fd65b4c9a2195c29d46043, type: 3}
       propertyPath: m_Name
       value: SM_Env_Mound_Large_02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325099026768116, guid: f877ba9d08fd65b4c9a2195c29d46043, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4575452960449438, guid: f877ba9d08fd65b4c9a2195c29d46043, type: 3}
       propertyPath: m_LocalPosition.x
@@ -203,6 +207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Mound_Large_02 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1325099026768116, guid: f877ba9d08fd65b4c9a2195c29d46043, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4575452960449438, guid: f877ba9d08fd65b4c9a2195c29d46043, type: 3}
       propertyPath: m_LocalPosition.x
       value: -70.7
@@ -263,6 +271,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 110763480}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &169269635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 169269636}
+  m_Layer: 0
+  m_Name: FinishingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &169269636
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169269635}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -79.44, y: -0.04, z: -73.33}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &185793690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -313,7 +351,7 @@ PrefabInstance:
     - target: {fileID: 4757676903438224277, guid: 59db27bb9a903734cad7a147c6debd0d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4757676903438224277, guid: 59db27bb9a903734cad7a147c6debd0d,
         type: 3}
@@ -330,6 +368,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4757676903438224234, guid: 59db27bb9a903734cad7a147c6debd0d,
+        type: 3}
+      propertyPath: startingLocation
+      value: 
+      objectReference: {fileID: 1137270785}
+    - target: {fileID: 4757676903438224234, guid: 59db27bb9a903734cad7a147c6debd0d,
+        type: 3}
+      propertyPath: challengeLocation
+      value: 
+      objectReference: {fileID: 1578433682}
+    - target: {fileID: 4757676903438224234, guid: 59db27bb9a903734cad7a147c6debd0d,
+        type: 3}
+      propertyPath: finishLocation
+      value: 
+      objectReference: {fileID: 169269635}
+    - target: {fileID: 4757676903438224234, guid: 59db27bb9a903734cad7a147c6debd0d,
+        type: 3}
+      propertyPath: pathToTake
+      value: 
+      objectReference: {fileID: 23800000, guid: 09480756f71ee3f459a4998e5e12b82f,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59db27bb9a903734cad7a147c6debd0d, type: 3}
 --- !u!1 &569478568
@@ -347,8 +406,8 @@ GameObject:
   m_Name: SM_Bld_Mexican_Entrance_01 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &569478569
 Transform:
@@ -362,7 +421,7 @@ Transform:
   m_LocalScale: {x: 1.1641421, y: 1.1641425, z: 1.1641425}
   m_Children: []
   m_Father: {fileID: 6001855258324094699}
-  m_RootOrder: 31
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &569478570
 MeshRenderer:
@@ -420,6 +479,10 @@ PrefabInstance:
     - target: {fileID: 1325099026768116, guid: f877ba9d08fd65b4c9a2195c29d46043, type: 3}
       propertyPath: m_Name
       value: SM_Env_Mound_Large_02 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325099026768116, guid: f877ba9d08fd65b4c9a2195c29d46043, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4575452960449438, guid: f877ba9d08fd65b4c9a2195c29d46043, type: 3}
       propertyPath: m_LocalPosition.x
@@ -492,6 +555,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Mound_Large_02 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1325099026768116, guid: f877ba9d08fd65b4c9a2195c29d46043, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4575452960449438, guid: f877ba9d08fd65b4c9a2195c29d46043, type: 3}
       propertyPath: m_LocalPosition.x
       value: 69.1
@@ -559,10 +626,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6001855258324094699}
     m_Modifications:
-    - target: {fileID: 1701248600186120, guid: 5e56be30793bbf341950e15c0641350a, type: 3}
-      propertyPath: m_Name
-      value: SM_Bld_Mexican_Wall_End_01 (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 4604641447607574, guid: 5e56be30793bbf341950e15c0641350a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.519058
@@ -607,6 +670,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1701248600186120, guid: 5e56be30793bbf341950e15c0641350a, type: 3}
+      propertyPath: m_Name
+      value: SM_Bld_Mexican_Wall_End_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1701248600186120, guid: 5e56be30793bbf341950e15c0641350a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1701248600186120, guid: 5e56be30793bbf341950e15c0641350a, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e56be30793bbf341950e15c0641350a, type: 3}
 --- !u!4 &745648321 stripped
@@ -625,6 +700,10 @@ PrefabInstance:
     - target: {fileID: 1325099026768116, guid: f877ba9d08fd65b4c9a2195c29d46043, type: 3}
       propertyPath: m_Name
       value: SM_Env_Mound_Large_02 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325099026768116, guid: f877ba9d08fd65b4c9a2195c29d46043, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4575452960449438, guid: f877ba9d08fd65b4c9a2195c29d46043, type: 3}
       propertyPath: m_LocalPosition.x
@@ -697,6 +776,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Mound_Large_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1325099026768116, guid: f877ba9d08fd65b4c9a2195c29d46043, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4575452960449438, guid: f877ba9d08fd65b4c9a2195c29d46043, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -764,26 +847,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6001855258324094699}
     m_Modifications:
-    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_Name
-      value: SM_Bld_Mexican_Wall_01 (22)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20.29
@@ -836,6 +899,42 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_Name
+      value: SM_Bld_Mexican_Wall_01 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
 --- !u!4 &1098609109 stripped
@@ -881,8 +980,14 @@ Transform:
   - {fileID: 723109860}
   - {fileID: 607922424}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1137270785 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7726778018493325883, guid: 9330e8a1d58cb254181ee94856daa43c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1862550614}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1183769503
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -893,6 +998,10 @@ PrefabInstance:
     - target: {fileID: 1325099026768116, guid: f877ba9d08fd65b4c9a2195c29d46043, type: 3}
       propertyPath: m_Name
       value: SM_Env_Mound_Large_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325099026768116, guid: f877ba9d08fd65b4c9a2195c29d46043, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4575452960449438, guid: f877ba9d08fd65b4c9a2195c29d46043, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1043,8 +1152,122 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &1266751308
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1519883423533514, guid: c3447cb9df113d2449816bc18de4303e, type: 3}
+      propertyPath: m_Name
+      value: SM_Prop_Stack_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4928503043874902, guid: c3447cb9df113d2449816bc18de4303e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -44.235096
+      objectReference: {fileID: 0}
+    - target: {fileID: 4928503043874902, guid: c3447cb9df113d2449816bc18de4303e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.991
+      objectReference: {fileID: 0}
+    - target: {fileID: 4928503043874902, guid: c3447cb9df113d2449816bc18de4303e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.212
+      objectReference: {fileID: 0}
+    - target: {fileID: 4928503043874902, guid: c3447cb9df113d2449816bc18de4303e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4928503043874902, guid: c3447cb9df113d2449816bc18de4303e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4928503043874902, guid: c3447cb9df113d2449816bc18de4303e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4928503043874902, guid: c3447cb9df113d2449816bc18de4303e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4928503043874902, guid: c3447cb9df113d2449816bc18de4303e, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4928503043874902, guid: c3447cb9df113d2449816bc18de4303e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4928503043874902, guid: c3447cb9df113d2449816bc18de4303e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4928503043874902, guid: c3447cb9df113d2449816bc18de4303e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c3447cb9df113d2449816bc18de4303e, type: 3}
+--- !u!1001 &1296500238
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 144104, guid: 537e73d2ee4f5284381e3e59cfcccba4, type: 3}
+      propertyPath: m_Name
+      value: SM_Prop_Table_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 420678, guid: 537e73d2ee4f5284381e3e59cfcccba4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -48.551
+      objectReference: {fileID: 0}
+    - target: {fileID: 420678, guid: 537e73d2ee4f5284381e3e59cfcccba4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 420678, guid: 537e73d2ee4f5284381e3e59cfcccba4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.592
+      objectReference: {fileID: 0}
+    - target: {fileID: 420678, guid: 537e73d2ee4f5284381e3e59cfcccba4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420678, guid: 537e73d2ee4f5284381e3e59cfcccba4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.54661363
+      objectReference: {fileID: 0}
+    - target: {fileID: 420678, guid: 537e73d2ee4f5284381e3e59cfcccba4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420678, guid: 537e73d2ee4f5284381e3e59cfcccba4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.837385
+      objectReference: {fileID: 0}
+    - target: {fileID: 420678, guid: 537e73d2ee4f5284381e3e59cfcccba4, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 420678, guid: 537e73d2ee4f5284381e3e59cfcccba4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420678, guid: 537e73d2ee4f5284381e3e59cfcccba4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 66.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 420678, guid: 537e73d2ee4f5284381e3e59cfcccba4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 537e73d2ee4f5284381e3e59cfcccba4, type: 3}
 --- !u!1001 &1324691477
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1055,6 +1278,10 @@ PrefabInstance:
     - target: {fileID: 1325099026768116, guid: f877ba9d08fd65b4c9a2195c29d46043, type: 3}
       propertyPath: m_Name
       value: SM_Env_Mound_Large_02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325099026768116, guid: f877ba9d08fd65b4c9a2195c29d46043, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4575452960449438, guid: f877ba9d08fd65b4c9a2195c29d46043, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1123,26 +1350,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6001855258324094699}
     m_Modifications:
-    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_Name
-      value: SM_Bld_Mexican_Wall_01 (20)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -19.709534
@@ -1195,6 +1402,42 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_Name
+      value: SM_Bld_Mexican_Wall_01 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
 --- !u!4 &1369016749 stripped
@@ -1203,6 +1446,93 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1369016748}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1393996308
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1844625165857160, guid: 535789156d7acfb49b142835472f32b3, type: 3}
+      propertyPath: m_Name
+      value: SM_Prop_Stack_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106459266058920, guid: 535789156d7acfb49b142835472f32b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -50.913
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106459266058920, guid: 535789156d7acfb49b142835472f32b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106459266058920, guid: 535789156d7acfb49b142835472f32b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.913
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106459266058920, guid: 535789156d7acfb49b142835472f32b3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106459266058920, guid: 535789156d7acfb49b142835472f32b3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106459266058920, guid: 535789156d7acfb49b142835472f32b3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106459266058920, guid: 535789156d7acfb49b142835472f32b3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106459266058920, guid: 535789156d7acfb49b142835472f32b3, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106459266058920, guid: 535789156d7acfb49b142835472f32b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106459266058920, guid: 535789156d7acfb49b142835472f32b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106459266058920, guid: 535789156d7acfb49b142835472f32b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 535789156d7acfb49b142835472f32b3, type: 3}
+--- !u!1 &1578433682
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1578433683}
+  m_Layer: 0
+  m_Name: TradingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1578433683
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578433682}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -49.94, y: 2.69, z: -12.381802}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1738351043
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1210,10 +1540,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6001855258324094699}
     m_Modifications:
-    - target: {fileID: 1701248600186120, guid: 5e56be30793bbf341950e15c0641350a, type: 3}
-      propertyPath: m_Name
-      value: SM_Bld_Mexican_Wall_End_01 (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 4604641447607574, guid: 5e56be30793bbf341950e15c0641350a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.2
@@ -1258,6 +1584,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1701248600186120, guid: 5e56be30793bbf341950e15c0641350a, type: 3}
+      propertyPath: m_Name
+      value: SM_Bld_Mexican_Wall_End_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1701248600186120, guid: 5e56be30793bbf341950e15c0641350a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1701248600186120, guid: 5e56be30793bbf341950e15c0641350a, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e56be30793bbf341950e15c0641350a, type: 3}
 --- !u!4 &1738351044 stripped
@@ -1276,6 +1614,10 @@ PrefabInstance:
     - target: {fileID: 1325099026768116, guid: f877ba9d08fd65b4c9a2195c29d46043, type: 3}
       propertyPath: m_Name
       value: SM_Env_Mound_Large_02 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325099026768116, guid: f877ba9d08fd65b4c9a2195c29d46043, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4575452960449438, guid: f877ba9d08fd65b4c9a2195c29d46043, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1337,6 +1679,85 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1858050777}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1862550614
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8642620538887144629, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: targetPoint
+      value: 
+      objectReference: {fileID: 1578433682}
+    - target: {fileID: 7437956944150727711, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: targetPoint
+      value: 
+      objectReference: {fileID: 169269635}
+    - target: {fileID: 7726778018493325883, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerWagon
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722794754738778145, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.586742
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722794754738778145, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722794754738778145, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 41.58804
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722794754738778145, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722794754738778145, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722794754738778145, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722794754738778145, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722794754738778145, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722794754738778145, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722794754738778145, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722794754738778145, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9330e8a1d58cb254181ee94856daa43c, type: 3}
 --- !u!1 &2985925779849041420
 GameObject:
   m_ObjectHideFlags: 0
@@ -1411,7 +1832,7 @@ Transform:
   m_LocalScale: {x: 1.1641421, y: 1.1641425, z: 1.1641425}
   m_Children: []
   m_Father: {fileID: 6001855258324094699}
-  m_RootOrder: 0
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4925409531491534654
 GameObject:
@@ -1428,8 +1849,8 @@ GameObject:
   m_Name: SM_Bld_Mexican_Entrance_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1001 &4925933049469455708
 PrefabInstance:
@@ -1438,10 +1859,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6001855258324094699}
     m_Modifications:
-    - target: {fileID: 1000713359381856, guid: 67f56b63fca89044a977b545607521ae, type: 3}
-      propertyPath: m_Name
-      value: SM_Bld_Mexican_02 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 4295831511701726, guid: 67f56b63fca89044a977b545607521ae, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.139534
@@ -1498,6 +1915,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000713359381856, guid: 67f56b63fca89044a977b545607521ae, type: 3}
+      propertyPath: m_Name
+      value: SM_Bld_Mexican_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000713359381856, guid: 67f56b63fca89044a977b545607521ae, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000713359381856, guid: 67f56b63fca89044a977b545607521ae, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4422558504809630, guid: 67f56b63fca89044a977b545607521ae, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
@@ -1509,6 +1938,14 @@ PrefabInstance:
     - target: {fileID: 4422558504809630, guid: 67f56b63fca89044a977b545607521ae, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1811560803304516, guid: 67f56b63fca89044a977b545607521ae, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1811560803304516, guid: 67f56b63fca89044a977b545607521ae, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67f56b63fca89044a977b545607521ae, type: 3}
@@ -1525,10 +1962,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6001855258324094699}
     m_Modifications:
-    - target: {fileID: 1247525296566816, guid: e90695fafed21d0478fc36d426a1fb88, type: 3}
-      propertyPath: m_Name
-      value: SM_Prop_Fountain_01
-      objectReference: {fileID: 0}
     - target: {fileID: 4778277371184844, guid: e90695fafed21d0478fc36d426a1fb88, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.84
@@ -1594,6 +2027,26 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 86530075e6d4cbf4cb60a2b53b539357, type: 2}
+    - target: {fileID: 1247525296566816, guid: e90695fafed21d0478fc36d426a1fb88, type: 3}
+      propertyPath: m_Name
+      value: SM_Prop_Fountain_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1247525296566816, guid: e90695fafed21d0478fc36d426a1fb88, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1247525296566816, guid: e90695fafed21d0478fc36d426a1fb88, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374275044812742, guid: e90695fafed21d0478fc36d426a1fb88, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374275044812742, guid: e90695fafed21d0478fc36d426a1fb88, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e90695fafed21d0478fc36d426a1fb88, type: 3}
 --- !u!4 &4925933049508976076 stripped
@@ -1609,10 +2062,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6001855258324094699}
     m_Modifications:
-    - target: {fileID: 1531268941389096, guid: 8a1bfb157c0dac2448ad4eff5a0a477d, type: 3}
-      propertyPath: m_Name
-      value: SM_Bld_Mexican_01 (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 4280333188349304, guid: 8a1bfb157c0dac2448ad4eff5a0a477d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.700462
@@ -1657,6 +2106,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1531268941389096, guid: 8a1bfb157c0dac2448ad4eff5a0a477d, type: 3}
+      propertyPath: m_Name
+      value: SM_Bld_Mexican_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531268941389096, guid: 8a1bfb157c0dac2448ad4eff5a0a477d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531268941389096, guid: 8a1bfb157c0dac2448ad4eff5a0a477d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4371085737948640, guid: 8a1bfb157c0dac2448ad4eff5a0a477d, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
@@ -1681,6 +2142,22 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1845603054081422, guid: 8a1bfb157c0dac2448ad4eff5a0a477d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845603054081422, guid: 8a1bfb157c0dac2448ad4eff5a0a477d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088496964184922, guid: 8a1bfb157c0dac2448ad4eff5a0a477d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088496964184922, guid: 8a1bfb157c0dac2448ad4eff5a0a477d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a1bfb157c0dac2448ad4eff5a0a477d, type: 3}
 --- !u!4 &4925933049568353357 stripped
@@ -1696,10 +2173,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6001855258324094699}
     m_Modifications:
-    - target: {fileID: 1701248600186120, guid: 5e56be30793bbf341950e15c0641350a, type: 3}
-      propertyPath: m_Name
-      value: SM_Bld_Mexican_Wall_End_01 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 4604641447607574, guid: 5e56be30793bbf341950e15c0641350a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.9604645
@@ -1744,6 +2217,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1701248600186120, guid: 5e56be30793bbf341950e15c0641350a, type: 3}
+      propertyPath: m_Name
+      value: SM_Bld_Mexican_Wall_End_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1701248600186120, guid: 5e56be30793bbf341950e15c0641350a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1701248600186120, guid: 5e56be30793bbf341950e15c0641350a, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e56be30793bbf341950e15c0641350a, type: 3}
 --- !u!4 &4925933049606738859 stripped
@@ -1759,26 +2244,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6001855258324094699}
     m_Modifications:
-    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_Name
-      value: SM_Bld_Mexican_Wall_01 (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20.290462
@@ -1831,6 +2296,42 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_Name
+      value: SM_Bld_Mexican_Wall_01 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
 --- !u!4 &4925933049624687672 stripped
@@ -1846,10 +2347,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6001855258324094699}
     m_Modifications:
-    - target: {fileID: 1701248600186120, guid: 5e56be30793bbf341950e15c0641350a, type: 3}
-      propertyPath: m_Name
-      value: SM_Bld_Mexican_Wall_End_01
-      objectReference: {fileID: 0}
     - target: {fileID: 4604641447607574, guid: 5e56be30793bbf341950e15c0641350a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.6324615
@@ -1894,6 +2391,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1701248600186120, guid: 5e56be30793bbf341950e15c0641350a, type: 3}
+      propertyPath: m_Name
+      value: SM_Bld_Mexican_Wall_End_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1701248600186120, guid: 5e56be30793bbf341950e15c0641350a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1701248600186120, guid: 5e56be30793bbf341950e15c0641350a, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e56be30793bbf341950e15c0641350a, type: 3}
 --- !u!4 &4925933049721484106 stripped
@@ -1909,26 +2418,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6001855258324094699}
     m_Modifications:
-    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_Name
-      value: SM_Bld_Mexican_Wall_01 (18)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -19.709534
@@ -1981,6 +2470,42 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_Name
+      value: SM_Bld_Mexican_Wall_01 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
 --- !u!4 &4925933049831438044 stripped
@@ -1996,10 +2521,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6001855258324094699}
     m_Modifications:
-    - target: {fileID: 1000713359381856, guid: 67f56b63fca89044a977b545607521ae, type: 3}
-      propertyPath: m_Name
-      value: SM_Bld_Mexican_02 (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 4295831511701726, guid: 67f56b63fca89044a977b545607521ae, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.35
@@ -2056,6 +2577,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000713359381856, guid: 67f56b63fca89044a977b545607521ae, type: 3}
+      propertyPath: m_Name
+      value: SM_Bld_Mexican_02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000713359381856, guid: 67f56b63fca89044a977b545607521ae, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000713359381856, guid: 67f56b63fca89044a977b545607521ae, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4422558504809630, guid: 67f56b63fca89044a977b545607521ae, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0.54260445
@@ -2076,6 +2609,14 @@ PrefabInstance:
       propertyPath: m_LocalRotation.w
       value: 0.8399884
       objectReference: {fileID: 0}
+    - target: {fileID: 1811560803304516, guid: 67f56b63fca89044a977b545607521ae, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1811560803304516, guid: 67f56b63fca89044a977b545607521ae, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67f56b63fca89044a977b545607521ae, type: 3}
 --- !u!4 &4925933049848876047 stripped
@@ -2091,22 +2632,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6001855258324094699}
     m_Modifications:
-    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_Name
-      value: SM_Bld_Mexican_Wall_01 (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.2904663
@@ -2151,6 +2676,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_Name
+      value: SM_Bld_Mexican_Wall_01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
 --- !u!4 &4925933049871776938 stripped
@@ -2169,6 +2726,14 @@ PrefabInstance:
     - target: {fileID: 1713154053863368, guid: 615ace7cebbf20c4c9cd1723c3f2323f, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mexican_04 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1713154053863368, guid: 615ace7cebbf20c4c9cd1723c3f2323f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1713154053863368, guid: 615ace7cebbf20c4c9cd1723c3f2323f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4798363766564746, guid: 615ace7cebbf20c4c9cd1723c3f2323f, type: 3}
       propertyPath: m_LocalRotation.y
@@ -2238,6 +2803,22 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1358878648417878, guid: 615ace7cebbf20c4c9cd1723c3f2323f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1358878648417878, guid: 615ace7cebbf20c4c9cd1723c3f2323f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646242963220420, guid: 615ace7cebbf20c4c9cd1723c3f2323f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646242963220420, guid: 615ace7cebbf20c4c9cd1723c3f2323f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 615ace7cebbf20c4c9cd1723c3f2323f, type: 3}
 --- !u!4 &4925933050058412216 stripped
@@ -2253,26 +2834,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6001855258324094699}
     m_Modifications:
-    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_Name
-      value: SM_Bld_Mexican_Wall_01 (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.29000092
@@ -2317,6 +2878,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_Name
+      value: SM_Bld_Mexican_Wall_01 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
 --- !u!4 &4925933050067407731 stripped
@@ -2332,14 +2929,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6001855258324094699}
     m_Modifications:
-    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_Name
-      value: SM_Bld_Mexican_Wall_01 (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.7095337
@@ -2384,6 +2973,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_Name
+      value: SM_Bld_Mexican_Wall_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
 --- !u!4 &4925933050115470279 stripped
@@ -2402,6 +3015,14 @@ PrefabInstance:
     - target: {fileID: 1207151216410610, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mexican_Wall_Corner_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1207151216410610, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1207151216410610, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4557500752108274, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
       propertyPath: m_RootOrder
@@ -2451,6 +3072,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1594382684620860, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1594382684620860, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
 --- !u!4 &4925933050172384611 stripped
@@ -2466,26 +3095,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6001855258324094699}
     m_Modifications:
-    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_Name
-      value: SM_Bld_Mexican_Wall_01 (21)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.290466
@@ -2530,6 +3139,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_Name
+      value: SM_Bld_Mexican_Wall_01 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
 --- !u!4 &4925933050197799842 stripped
@@ -2545,10 +3190,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6001855258324094699}
     m_Modifications:
-    - target: {fileID: 1388272166674680, guid: 0bf16b78d0f798f4390e353f5336241c, type: 3}
-      propertyPath: m_Name
-      value: SM_Bld_Quarry_Cover_01 (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 4402323970337890, guid: 0bf16b78d0f798f4390e353f5336241c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.479538
@@ -2593,6 +3234,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1388272166674680, guid: 0bf16b78d0f798f4390e353f5336241c, type: 3}
+      propertyPath: m_Name
+      value: SM_Bld_Quarry_Cover_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388272166674680, guid: 0bf16b78d0f798f4390e353f5336241c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388272166674680, guid: 0bf16b78d0f798f4390e353f5336241c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bf16b78d0f798f4390e353f5336241c, type: 3}
 --- !u!4 &4925933050211389990 stripped
@@ -2611,6 +3264,14 @@ PrefabInstance:
     - target: {fileID: 1207151216410610, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mexican_Wall_Corner_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1207151216410610, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1207151216410610, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4557500752108274, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
       propertyPath: m_LocalRotation.y
@@ -2676,6 +3337,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 1594382684620860, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1594382684620860, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
 --- !u!4 &4925933050257535412 stripped
@@ -2691,26 +3360,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6001855258324094699}
     m_Modifications:
-    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_Name
-      value: SM_Bld_Mexican_Wall_01 (14)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.290001
@@ -2755,24 +3404,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
---- !u!4 &4925933050351009554 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0,
-    type: 3}
-  m_PrefabInstance: {fileID: 4925933050351009553}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &4925933050637413297
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 6001855258324094699}
-    m_Modifications:
     - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_Name
-      value: SM_Bld_Mexican_Wall_01 (13)
+      value: SM_Bld_Mexican_Wall_01 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_LocalRotation.y
@@ -2790,6 +3432,29 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+--- !u!4 &4925933050351009554 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 4925933050351009553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4925933050637413297
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6001855258324094699}
+    m_Modifications:
     - target: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.290001
@@ -2838,24 +3503,17 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
---- !u!4 &4925933050637413298 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0,
-    type: 3}
-  m_PrefabInstance: {fileID: 4925933050637413297}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &4925933050707280094
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 6001855258324094699}
-    m_Modifications:
     - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_Name
-      value: SM_Bld_Mexican_Wall_01 (10)
+      value: SM_Bld_Mexican_Wall_01 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_LocalRotation.y
@@ -2873,6 +3531,29 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+--- !u!4 &4925933050637413298 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 4925933050637413297}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4925933050707280094
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6001855258324094699}
+    m_Modifications:
     - target: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20.290462
@@ -2925,6 +3606,42 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_Name
+      value: SM_Bld_Mexican_Wall_01 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
 --- !u!4 &4925933050707280095 stripped
@@ -2940,14 +3657,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6001855258324094699}
     m_Modifications:
-    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_Name
-      value: SM_Bld_Mexican_Wall_01 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -19.709534
@@ -3000,6 +3709,30 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_Name
+      value: SM_Bld_Mexican_Wall_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
 --- !u!4 &4925933050905702297 stripped
@@ -3015,26 +3748,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6001855258324094699}
     m_Modifications:
-    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_Name
-      value: SM_Bld_Mexican_Wall_01 (17)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.709999
@@ -3083,24 +3796,17 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
---- !u!4 &4925933051251661767 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0,
-    type: 3}
-  m_PrefabInstance: {fileID: 4925933051251661766}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &4925933051296676652
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 6001855258324094699}
-    m_Modifications:
     - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_Name
-      value: SM_Bld_Mexican_Wall_01 (3)
+      value: SM_Bld_Mexican_Wall_01 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_LocalRotation.y
@@ -3118,6 +3824,29 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+--- !u!4 &4925933051251661767 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 4925933051251661766}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4925933051296676652
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6001855258324094699}
+    m_Modifications:
     - target: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.709534
@@ -3166,24 +3895,17 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
---- !u!4 &4925933051296676653 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0,
-    type: 3}
-  m_PrefabInstance: {fileID: 4925933051296676652}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &4925933051304031029
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 6001855258324094699}
-    m_Modifications:
     - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_Name
-      value: SM_Bld_Mexican_Wall_01 (9)
+      value: SM_Bld_Mexican_Wall_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_LocalRotation.y
@@ -3201,6 +3923,29 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+--- !u!4 &4925933051296676653 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 4925933051296676652}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4925933051304031029
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6001855258324094699}
+    m_Modifications:
     - target: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20.290462
@@ -3253,6 +3998,42 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_Name
+      value: SM_Bld_Mexican_Wall_01 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
 --- !u!4 &4925933051304031030 stripped
@@ -3271,6 +4052,14 @@ PrefabInstance:
     - target: {fileID: 1207151216410610, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mexican_Wall_Corner_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1207151216410610, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1207151216410610, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4557500752108274, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
       propertyPath: m_RootOrder
@@ -3324,6 +4113,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 1594382684620860, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1594382684620860, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
 --- !u!4 &4925933051416491413 stripped
@@ -3342,6 +4139,14 @@ PrefabInstance:
     - target: {fileID: 1207151216410610, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mexican_Wall_Corner_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1207151216410610, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1207151216410610, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4557500752108274, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
       propertyPath: m_RootOrder
@@ -3391,6 +4196,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1594382684620860, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1594382684620860, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88bc482bb8237a74fb6d37e3bdd83750, type: 3}
 --- !u!4 &4925933051422767943 stripped
@@ -3406,22 +4219,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6001855258324094699}
     m_Modifications:
-    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_Name
-      value: SM_Bld_Mexican_Wall_01 (19)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.7095337
@@ -3470,6 +4267,38 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_Name
+      value: SM_Bld_Mexican_Wall_01 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
 --- !u!4 &4925933051451977679 stripped
@@ -3485,26 +4314,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6001855258324094699}
     m_Modifications:
-    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_Name
-      value: SM_Bld_Mexican_Wall_01 (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -19.709534
@@ -3557,6 +4366,42 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_Name
+      value: SM_Bld_Mexican_Wall_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
 --- !u!4 &4925933051470707549 stripped
@@ -3572,22 +4417,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6001855258324094699}
     m_Modifications:
-    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_Name
-      value: SM_Bld_Mexican_Wall_01 (15)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4186442079643728, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.29
@@ -3636,6 +4465,38 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_Name
+      value: SM_Bld_Mexican_Wall_01 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601172089432882, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766390112809618, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952032986362624, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e91d4132b0b22c14eb088dc1855996e0, type: 3}
 --- !u!4 &4925933051491287973 stripped
@@ -3655,26 +4516,27 @@ Transform:
   m_LocalPosition: {x: -52.37, y: -6.51, z: -22.644833}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4921533392798696922}
+  - {fileID: 4925933050172384611}
   - {fileID: 4925933050058412216}
   - {fileID: 4925933049624687672}
   - {fileID: 4925933049848876047}
   - {fileID: 4925933049831438044}
   - {fileID: 4925933049469455709}
   - {fileID: 4925933050197799842}
-  - {fileID: 4925933050257535412}
-  - {fileID: 4925933050172384611}
+  - {fileID: 4925933051422767943}
+  - {fileID: 4925933051416491413}
   - {fileID: 4925933049568353357}
   - {fileID: 4925933050067407731}
   - {fileID: 4925933050211389990}
   - {fileID: 4925933050115470279}
   - {fileID: 4925933051491287973}
+  - {fileID: 4925933050257535412}
   - {fileID: 4925933050351009554}
   - {fileID: 4925933049871776938}
   - {fileID: 4925933051451977679}
   - {fileID: 4925933049721484106}
-  - {fileID: 4925933049606738859}
   - {fileID: 4925933049508976076}
+  - {fileID: 4921533392798696922}
   - {fileID: 4925933050707280095}
   - {fileID: 4925933050637413298}
   - {fileID: 4925933050905702297}
@@ -3682,11 +4544,10 @@ Transform:
   - {fileID: 4925933051304031030}
   - {fileID: 4925933051251661767}
   - {fileID: 4925933051470707549}
-  - {fileID: 4925933051416491413}
-  - {fileID: 4925933051422767943}
+  - {fileID: 4925933049606738859}
+  - {fileID: 569478569}
   - {fileID: 1369016749}
   - {fileID: 1098609109}
-  - {fileID: 569478569}
   - {fileID: 1738351044}
   - {fileID: 745648321}
   m_Father: {fileID: 0}

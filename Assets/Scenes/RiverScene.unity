@@ -119,7 +119,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 7ea9a35efc1647f41bdbcafc89d3d877, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: c96e8a7e183a08e4f8fe9d194dbde0dd, type: 2}
 --- !u!1001 &2634909
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4650,8 +4650,9 @@ Transform:
   - {fileID: 308176029}
   - {fileID: 1895032943}
   - {fileID: 420590347}
+  - {fileID: 1480618888}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &700770306
 PrefabInstance:
@@ -8912,10 +8913,10 @@ Transform:
   m_GameObject: {fileID: 1480618884}
   m_LocalRotation: {x: -0, y: -0.256832, z: -0, w: 0.96645606}
   m_LocalPosition: {x: 27.26, y: 0.23, z: -4.21}
-  m_LocalScale: {x: 14.037, y: 1, z: 5.9868}
+  m_LocalScale: {x: 14.037002, y: 1, z: 5.9868}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 700557559}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: -29.764002, z: 0}
 --- !u!4 &1483931895 stripped
 Transform:
@@ -14435,7 +14436,7 @@ PrefabInstance:
     - target: {fileID: 4757676903438224277, guid: 59db27bb9a903734cad7a147c6debd0d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4757676903438224277, guid: 59db27bb9a903734cad7a147c6debd0d,
         type: 3}
@@ -14452,5 +14453,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4757676903438224234, guid: 59db27bb9a903734cad7a147c6debd0d,
+        type: 3}
+      propertyPath: startingLocation
+      value: 
+      objectReference: {fileID: 1868715495}
+    - target: {fileID: 4757676903438224234, guid: 59db27bb9a903734cad7a147c6debd0d,
+        type: 3}
+      propertyPath: challengeLocation
+      value: 
+      objectReference: {fileID: 1537146007400208}
+    - target: {fileID: 4757676903438224234, guid: 59db27bb9a903734cad7a147c6debd0d,
+        type: 3}
+      propertyPath: finishLocation
+      value: 
+      objectReference: {fileID: 1442713284}
+    - target: {fileID: 4757676903438224234, guid: 59db27bb9a903734cad7a147c6debd0d,
+        type: 3}
+      propertyPath: pathToTake
+      value: 
+      objectReference: {fileID: 23800000, guid: c96e8a7e183a08e4f8fe9d194dbde0dd,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59db27bb9a903734cad7a147c6debd0d, type: 3}

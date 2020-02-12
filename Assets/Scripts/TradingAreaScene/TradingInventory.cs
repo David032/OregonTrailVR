@@ -23,7 +23,7 @@ public class TradingInventory : MonoBehaviour
     public TradeableGoods missingGood;
     public List<TradeableGoods> ownedGoods;
 
-    int goodsDesired = 3;
+    int goodsDesired = 2;
 
     // Start is called before the first frame update
     void Start()
@@ -35,8 +35,22 @@ public class TradingInventory : MonoBehaviour
     {
         for (int i = 0; i < goodsDesired; i++)
         {
-            int randomSelection = Random.Range(0, 5);
-            
+            ownedGoods.Add(randomGood());
+            if (ownedGoods.Contains(ownedGoods[i]))
+            {
+                ownedGoods.Remove(ownedGoods[i]);
+                i--;
+            }
+        }
+
+        for (int i = 0; i < 1; i++)
+        {
+            missingGood = randomGood();
+            if (ownedGoods.Contains(missingGood))
+            {
+                ownedGoods.Remove(missingGood);
+                i--;
+            }
         }
     }
 

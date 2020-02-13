@@ -393,7 +393,8 @@ PrefabInstance:
         type: 3}
       propertyPath: pathToTake
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 23800000, guid: 09480756f71ee3f459a4998e5e12b82f,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59db27bb9a903734cad7a147c6debd0d, type: 3}
 --- !u!1 &569478568
@@ -1125,27 +1126,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1862550614}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1137270786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1137270785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 674cc76d553825446a62035322919eb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameObjectLocations:
-  - {fileID: 800577048}
-  - {fileID: 1660702642}
-  - {fileID: 753069897}
-  - {fileID: 1349335431}
-  - {fileID: 1648771969}
-  - {fileID: 146210473}
-  missingGood: 0
-  ownedGoods: 
 --- !u!1001 &1183769503
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1892,6 +1872,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1604997810 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4950918318772172544, guid: 9330e8a1d58cb254181ee94856daa43c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1862550614}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1648771969 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1844625165857160, guid: 535789156d7acfb49b142835472f32b3,
@@ -2113,6 +2099,33 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1858050777}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1860971195 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7112108478970308664, guid: 9330e8a1d58cb254181ee94856daa43c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1862550614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1860971197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860971195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674cc76d553825446a62035322919eb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ownedGoods: 
+  missingGood: 0
+  WoodTrader: {fileID: 800577048}
+  MetalTrader: {fileID: 1660702642}
+  FoodTrader: {fileID: 753069897}
+  MedicalTrader: {fileID: 1349335431}
+  ToolTrader: {fileID: 1648771969}
+  BoozeTrader: {fileID: 146210473}
+  headCenter: {fileID: 1604997810}
 --- !u!1001 &1862550614
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2190,7 +2203,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2631545408777287960, guid: 9330e8a1d58cb254181ee94856daa43c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9330e8a1d58cb254181ee94856daa43c, type: 3}
 --- !u!1 &1867849537
 GameObject:

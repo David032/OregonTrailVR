@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using Random = UnityEngine.Random;
 
 /// <summary>
@@ -11,6 +12,9 @@ using Random = UnityEngine.Random;
 /// </summary>
 public class TradingInventory : MonoBehaviour
 {
+    [Header("Core bits")]
+    public NavMeshAgent agent;
+    public GameObject player;
     public enum TradeableGoods
     {
         Wood,
@@ -21,21 +25,32 @@ public class TradingInventory : MonoBehaviour
         Booze,
     }
 
-    public List<GameObject> GameObjectLocations;
-    public TradeableGoods missingGood;
+    [Header("Goods")]
     public List<TradeableGoods> ownedGoods;
+    public TradeableGoods missingGood;
+
+    [Header("Traders")]
+    public GameObject WoodTrader;
+    public GameObject MetalTrader;
+    public GameObject FoodTrader;
+    public GameObject MedicalTrader;
+    public GameObject ToolTrader;
+    public GameObject BoozeTrader;
 
     int goodsDesired = 3;
 
+    GameObject lookingAtObject;
+
+    [Tooltip("This should be the centreEye GO")]
+    public GameObject headCenter;
+
     private void OnValidate()
     {
-        if (GameObjectLocations.Capacity != Enum.GetNames(typeof(TradeableGoods)).Length)
+        if (ownedGoods.Capacity != Enum.GetNames(typeof(TradeableGoods)).Length)
         {
-            GameObjectLocations.Capacity = Enum.GetNames(typeof(TradeableGoods)).Length;
+            ownedGoods.Capacity = Enum.GetNames(typeof(TradeableGoods)).Length;
         }
     }
-
-
 
     void Awake()
     {
@@ -57,4 +72,17 @@ public class TradingInventory : MonoBehaviour
     {
         return (TradeableGoods)(Random.Range(0, Enum.GetNames(typeof(TradeableGoods)).Length));
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        lookingAtObject = other.gameObject;
+        print("Am looking at " + lookingAtObject);
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        print("Am not looking at " + lookingAtObject);
+        lookingAtObject = null;
+    }
+
 }

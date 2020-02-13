@@ -15,21 +15,27 @@ public class TradingInventory : MonoBehaviour
     {
         Wood,
         Metals,
-        Grain,
+        Food,
         MedicinalSupplies,
         ToolsAndWeapons,
+        Booze,
     }
 
+    public List<GameObject> GameObjectLocations;
     public TradeableGoods missingGood;
     public List<TradeableGoods> ownedGoods;
 
-    int goodsDesired = 2;
+    int goodsDesired = 3;
 
-    // Start is called before the first frame update
-    void Start()
+    private void OnValidate()
     {
-        
+        if (GameObjectLocations.Capacity != Enum.GetNames(typeof(TradeableGoods)).Length)
+        {
+            GameObjectLocations.Capacity = Enum.GetNames(typeof(TradeableGoods)).Length;
+        }
     }
+
+
 
     void Awake()
     {
@@ -43,11 +49,6 @@ public class TradingInventory : MonoBehaviour
                 ownedGoods.Remove(ownedGoods[i]);
                 i--;
             }
-            if (ownedGoods.Contains(ownedGoods[i]))
-            {
-                ownedGoods.Remove(ownedGoods[i]);
-                i--;
-            }
         }
 
     }
@@ -55,13 +56,5 @@ public class TradingInventory : MonoBehaviour
     TradeableGoods randomGood() 
     {
         return (TradeableGoods)(Random.Range(0, Enum.GetNames(typeof(TradeableGoods)).Length));
-    }
-
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

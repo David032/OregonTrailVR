@@ -33,9 +33,16 @@ public class TradingInventory : MonoBehaviour
 
     void Awake()
     {
+        missingGood = randomGood();
+
         for (int i = 0; i < goodsDesired; i++)
         {
             ownedGoods.Add(randomGood());
+            if (ownedGoods[i] == missingGood)
+            {
+                ownedGoods.Remove(ownedGoods[i]);
+                i--;
+            }
             if (ownedGoods.Contains(ownedGoods[i]))
             {
                 ownedGoods.Remove(ownedGoods[i]);
@@ -43,15 +50,6 @@ public class TradingInventory : MonoBehaviour
             }
         }
 
-        for (int i = 0; i < 1; i++)
-        {
-            missingGood = randomGood();
-            if (ownedGoods.Contains(missingGood))
-            {
-                ownedGoods.Remove(missingGood);
-                i--;
-            }
-        }
     }
 
     TradeableGoods randomGood() 

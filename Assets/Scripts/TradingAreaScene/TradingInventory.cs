@@ -10,20 +10,27 @@ using Random = UnityEngine.Random;
 /// Ensure that one of the TRADERS has it & wants a randmoly generated good that the player has.
 /// 
 /// </summary>
+/// 
+
+public enum TradeableGoods
+{
+    Wood,
+    Metals,
+    Food,
+    MedicinalSupplies,
+    ToolsAndWeapons,
+    Booze,
+}
+
+
 public class TradingInventory : MonoBehaviour
 {
     [Header("Core bits")]
     public NavMeshAgent agent;
     public GameObject player;
-    public enum TradeableGoods
-    {
-        Wood,
-        Metals,
-        Food,
-        MedicinalSupplies,
-        ToolsAndWeapons,
-        Booze,
-    }
+    [Tooltip("This should be the centreEye GO")]
+    public GameObject headCenter;
+    public Stage2 secondStage;
 
     [Header("Goods")]
     public List<TradeableGoods> ownedGoods;
@@ -40,9 +47,8 @@ public class TradingInventory : MonoBehaviour
     int goodsDesired = 3;
 
     GameObject lookingAtObject;
+    bool hasRequiredGood = false;
 
-    [Tooltip("This should be the centreEye GO")]
-    public GameObject headCenter;
 
     private void OnValidate()
     {
@@ -76,13 +82,46 @@ public class TradingInventory : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         lookingAtObject = other.gameObject;
+        TradeableGoods tradersOwnedGood = other.gameObject.GetComponent<TradingResource>().ownedGood;
+        TradeableGoods tradersDesiredGood = other.gameObject.GetComponent<TradingResource>().desiredGood;
+
+        if (ownedGoods.Contains(tradersDesiredGood))
+        {
+            StartCoroutine(executeTrade(tradersOwnedGood, tradersDesiredGood, ownedGoods));
+        }
+
         print("Am looking at " + lookingAtObject);
     }
 
     private void OnTriggerExit(Collider other)
     {
-        print("Am not looking at " + lookingAtObject);
         lookingAtObject = null;
+        //stop any trading sounds, if playing
     }
 
+    IEnumerator executeTrade(TradeableGoods traderOwnedGood, TradeableGoods traderDesiredGood, List<TradeableGoods> playersGoods) 
+    {
+        //Start playing some babling/trading noises?
+        yield return new WaitForSeconds(5f);
+        //Stop them playing
+        if (playersGoods.Contains(traderDesiredGood))
+        {
+            playersGoods.Remove(traderDesiredGood);
+            playersGoods.Add(traderOwnedGood);
+        }
+        yield return new WaitForSeconds(1f);
+    }
+
+    private void Update()
+    {
+        if (ownedGoods.Contains(missingGood))
+        {
+            hasRequiredGood = true;
+        }
+
+        if (hasRequiredGood)
+        {
+            secondStage.enabled = true;
+        }
+    }
 }

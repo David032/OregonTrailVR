@@ -12,6 +12,7 @@ public class LookInteraction : MonoBehaviour
 
     public AudioClip challengeAudio;
     public AudioSource compainion;
+    public AudioSource treeChop;
 
     public GameObject warpingFixPoint;
 
@@ -20,7 +21,9 @@ public class LookInteraction : MonoBehaviour
         if (other.gameObject.tag == "InteractableTree")
         {
             other.gameObject.SetActive(false);
+
             print("Interacted");
+            treeChop.Play();
             bridge.SetActive(true);
             agent.SetDestination(exitPoint.transform.position);
             print(agent.destination);
@@ -30,5 +33,4 @@ public class LookInteraction : MonoBehaviour
             agent.Warp(warpingFixPoint.transform.position);
         }
     }
-
 }

@@ -21,6 +21,6 @@ public class Stage1 : MonoBehaviour
 
     void Update()
     {
-        
+
     }
 }

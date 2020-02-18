@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - InteractableTree
+  - WoodenTerrain
+  - RockyTerrain
   layers:
   - Default
   - TransparentFX

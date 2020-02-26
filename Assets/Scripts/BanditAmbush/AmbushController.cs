@@ -42,7 +42,15 @@ public class AmbushController : MonoBehaviour
 
     IEnumerator MakeYourDecision() 
     {
-        yield return new WaitForSeconds(30f);
+        yield return new WaitForSecondsRealtime(10);
+        //Print the time of when the function is first called.
+        print("Started Coroutine at timestamp : " + Time.time);
+
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(5);
+
+        //After we have waited 5 seconds print the time again.
+        print("Finished Coroutine at timestamp : " + Time.time);
     }
 
 }

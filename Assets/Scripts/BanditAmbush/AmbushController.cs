@@ -22,16 +22,18 @@ public class AmbushController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         lookingAtRoute = other.gameObject;
+        print(lookingAtRoute);
 
         if (lookingAtRoute == SafeRoute)
         {
-            MakeYourDecision();
-            agent.SetDestination(safeExit.transform.position);
+            print("SAFE!");
+            StartCoroutine(MakeYourDecision(safeExit.transform.position, other));
+            print("SHOULD BE MOVIN'!");
         }
         if (lookingAtRoute == DangerousRoute)
         {
-            StartCoroutine(MakeYourDecision());
-            agent.SetDestination(dangerousExit.transform.position);
+            print("DANGEROUS!");
+            StartCoroutine(MakeYourDecision(dangerousExit.transform.position,other));
         }
     }
 
@@ -40,17 +42,16 @@ public class AmbushController : MonoBehaviour
         lookingAtRoute = null;
     }
 
-    IEnumerator MakeYourDecision() 
+    IEnumerator MakeYourDecision(Vector3 endpoint, Collider other) 
     {
-        yield return new WaitForSecondsRealtime(10);
-        //Print the time of when the function is first called.
         print("Started Coroutine at timestamp : " + Time.time);
-
-        //yield on a new YieldInstruction that waits for 5 seconds.
-        yield return new WaitForSeconds(5);
-
-        //After we have waited 5 seconds print the time again.
+        yield return new WaitForSeconds(4);
+        if (lookingAtRoute == other.gameObject)
+        {
+            agent.SetDestination(endpoint);
+        }
         print("Finished Coroutine at timestamp : " + Time.time);
+        yield return new WaitForSeconds(1);
     }
 
 }

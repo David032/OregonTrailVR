@@ -25,29 +25,42 @@ public class Stage1Audio : MonoBehaviour
                 wagonSource.Play();
             }
         }
-
         Debug.Log(wagonSource.clip);
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnCollisionEnter (Collision other)
     {
-        if (other.gameObject.tag == "WoodenTerrain")
-        {
-            Debug.Log("Travelling on wood");
-            wagonSource.clip = wagonAudio[1];
-        }
+        //if (other.gameObject.tag == "WoodenTerrain")
+        //{
+        //    Debug.Log("Travelling on wood");
+        //    wagonSource.clip = wagonAudio[1];
+        //}
 
-        else if (other.gameObject.tag == "RockyTerrain")
-        {
-            Debug.Log("Travelling on rock");
-            wagonSource.clip = wagonAudio[0];
-        }
+        //else if (other.gameObject.tag == "RockyTerrain")
+        //{
+        //    Debug.Log("Travelling on rock");
+        //    wagonSource.clip = wagonAudio[0];
+        //}
 
-        else if (!(other.gameObject.tag == "WoodenTerrain")
-            &&!(other.gameObject.tag == "RockyTerrain"))
+        //else if (other.gameObject.tag == "Road")
+        //{
+        //    Debug.Log("Travelling on road");
+        //    wagonSource.clip = wagonAudio[0];
+        //}
+
+        //else
+        //{
+        //    Debug.Log("Travelling on ground");
+        //    wagonSource.clip = wagonAudio[0];
+        //}
+
+        foreach (AudioClip currentClip in wagonAudio)
         {
-            Debug.Log("Travelling on ground");
-            wagonSource.clip = wagonAudio[0];
+            if (other.gameObject.tag == currentClip.name)
+            {
+                wagonSource.clip = wagonAudio[System.Array.IndexOf(wagonAudio, currentClip)];
+                Debug.Log("Travelling on " + currentClip.name);
+            }
         }
     }
 }

@@ -1,0 +1,37 @@
+ManifestFileVersion: 0
+CRC: 892475547
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 86206d180f186fecb6f5ca8016750d0d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2164263bd948184a9373784f776f453a
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Models/POLYGON - Nature Pack v1.0 exported/Materials/Water/PolygonNature_Water.mat
+- Assets/Models/POLYGON - Nature Pack v1.0 exported/FX/FX_Models/Materials/lambert1.mat
+- Assets/Models/POLYGON - Western Frontier Pack/Materials/PolygonWesternFrontier_Texture_01_A.mat
+- Assets/Models/POLYGON - Nature Pack v1.0 exported/Materials/PolygonNature_Tree_Trunk.mat
+- Assets/Models/POLYGON - Western Frontier Pack/Materials/Misc/PolygonWesternFrontier_Water_01.mat
+- Assets/Models/PolygonVikings/Materials/PolyVikings_Material_01.mat
+- Assets/Models/POLYGON - Nature Pack v1.0 exported/FX/FX_Materials/Butterfly.mat
+- Assets/Models/POLYGON - Nature Pack v1.0 exported/FX/FX_Models/Materials/ButterflyPipeMat.mat
+- Assets/Oculus/VR/Materials/BasicHandMaterial.mat
+- Assets/Models/POLYGON - Nature Pack v1.0 exported/Materials/PolygonNature_01.mat
+- Assets/Models/POLYGON - Nature Pack v1.0 exported/FX/FX_Materials/Ripple_Material.mat
+- Assets/Models/POLYGON - Western Frontier Pack/Materials/Alts/PolygonWesternFrontier_Texture_03_B.mat
+- Assets/Models/PolygonAdventure/Materials/PolyAdventureMaterial_01.mat
+- Assets/Models/POLYGON - Nature Pack v1.0 exported/FX/FX_Materials/Water_FX.mat
+- Assets/SimpleFantasy/Materials/Medieval_Material.mat
+Dependencies:
+- D:/Projects/OregonTrailVR/OVRAssetBundles/OVRMasterBundle/asset_png0
+- D:/Projects/OregonTrailVR/OVRAssetBundles/OVRMasterBundle/asset_shader0
+- D:/Projects/OregonTrailVR/OVRAssetBundles/OVRMasterBundle/asset_tga0

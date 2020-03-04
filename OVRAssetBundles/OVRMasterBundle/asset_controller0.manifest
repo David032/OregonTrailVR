@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 2344671572
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4959e57a82d47d5a005b8d2a6be72f96
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: fdf6c57a251b9f6ec27bdd2fe01b033c
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+Assets:
+- Assets/Models/PolygonAdventure/Models/Characters/Character.controller
+- Assets/SimpleFantasy/Models/Animals/Stag.controller
+Dependencies:
+- D:/Projects/OregonTrailVR/OVRAssetBundles/OVRMasterBundle/asset_fbx0

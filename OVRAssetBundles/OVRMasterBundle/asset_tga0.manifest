@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 694215712
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 780756a8cc612018783fd6851ef83910
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f19fbf085e00d23fbc8d6cf7b345590b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Models/POLYGON - Nature Pack v1.0 exported/Textures/Misc/Noise_Big.tga
+Dependencies: []

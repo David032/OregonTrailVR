@@ -5633,6 +5633,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7726778018493325883, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerWagon
+      objectReference: {fileID: 0}
     - target: {fileID: 2631545408777287960, guid: 9330e8a1d58cb254181ee94856daa43c,
         type: 3}
       propertyPath: warpingFixPoint
@@ -5663,11 +5668,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1868715495}
-    - target: {fileID: 7726778018493325883, guid: 9330e8a1d58cb254181ee94856daa43c,
-        type: 3}
-      propertyPath: m_Name
-      value: PlayerWagon
-      objectReference: {fileID: 0}
     - target: {fileID: 8642620538887144629, guid: 9330e8a1d58cb254181ee94856daa43c,
         type: 3}
       propertyPath: targetPoint

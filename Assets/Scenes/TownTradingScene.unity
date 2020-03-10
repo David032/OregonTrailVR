@@ -313,6 +313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 169269636}
+  - component: {fileID: 169269637}
   m_Layer: 0
   m_Name: FinishingPoint
   m_TagString: Untagged
@@ -334,6 +335,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &169269637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169269635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c080be74faeaa5849953e1b0137620e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneIndexToLoad: 3
+  autoCalculateIndex: 0
 --- !u!1001 &185793690
 PrefabInstance:
   m_ObjectHideFlags: 0

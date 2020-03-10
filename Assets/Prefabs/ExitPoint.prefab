@@ -57,5 +57,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c080be74faeaa5849953e1b0137620e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndexToLoad: 0
+  sceneIndexToLoad: 2
   autoCalculateIndex: 1

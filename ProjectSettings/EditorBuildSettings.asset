@@ -6,9 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 00c5057391792974db65d4b22ec87d07
+  - enabled: 1
     path: Assets/Scenes/RiverScene.unity
     guid: 9062c90940fbaa34c9a02f1717ef7e0e
   - enabled: 1
     path: Assets/Scenes/TownTradingScene.unity
     guid: 4ad9184f17a7c3c4f8a15fa56d952fa5
+  - enabled: 1
+    path: Assets/Scenes/BanditScene.unity
+    guid: 7d864547edd22194fbc616b3fef8ab3d
+  - enabled: 1
+    path: Assets/Scenes/Repair.unity
+    guid: fc1391f4f7964a2469201c1e767c2553
   m_configObjects: {}

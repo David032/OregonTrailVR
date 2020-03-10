@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - InteractableTree
+  - Trees
   - WoodenTerrain
   - RockyTerrain
   - Road
@@ -17,7 +18,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - No Ripples
   - 
   - 
   - 

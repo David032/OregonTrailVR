@@ -81375,10 +81375,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-<<<<<<< HEAD
-  m_SourcePrefab: {fileID: 100100000, guid: 3d0fa691f27670646befb5b4d48af2c8, type: 3}
---- !u!1001 &896608696
-=======
   m_SourcePrefab: {fileID: 100100000, guid: 00ed5f0c12fd8d5499f54fb0096adab9, type: 3}
 --- !u!4 &2018688166 stripped
 Transform:
@@ -81393,62 +81389,10 @@ Transform:
   m_PrefabInstance: {fileID: 1967169614}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2024765714
->>>>>>> AudioBranch
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-<<<<<<< HEAD
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7726778018493325883, guid: 9330e8a1d58cb254181ee94856daa43c,
-        type: 3}
-      propertyPath: m_Name
-      value: PlayerWagon
-      objectReference: {fileID: 0}
-    - target: {fileID: 2631545408777287960, guid: 9330e8a1d58cb254181ee94856daa43c,
-        type: 3}
-      propertyPath: warpingFixPoint
-      value: 
-      objectReference: {fileID: 8563336955838121391}
-    - target: {fileID: 2631545408777287960, guid: 9330e8a1d58cb254181ee94856daa43c,
-        type: 3}
-      propertyPath: compainion
-      value: 
-      objectReference: {fileID: 3481454176323940472}
-    - target: {fileID: 2631545408777287960, guid: 9330e8a1d58cb254181ee94856daa43c,
-        type: 3}
-      propertyPath: bridge
-      value: 
-      objectReference: {fileID: 736803772}
-    - target: {fileID: 2631545408777287960, guid: 9330e8a1d58cb254181ee94856daa43c,
-        type: 3}
-      propertyPath: exitPoint
-      value: 
-      objectReference: {fileID: 1442713284}
-    - target: {fileID: 2631545408777287960, guid: 9330e8a1d58cb254181ee94856daa43c,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 1868715501}
-    - target: {fileID: 2631545408777287960, guid: 9330e8a1d58cb254181ee94856daa43c,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1868715495}
-    - target: {fileID: 8642620538887144629, guid: 9330e8a1d58cb254181ee94856daa43c,
-        type: 3}
-      propertyPath: targetPoint
-      value: 
-      objectReference: {fileID: 1537146007400208}
-    - target: {fileID: 7437956944150727711, guid: 9330e8a1d58cb254181ee94856daa43c,
-        type: 3}
-      propertyPath: targetPoint
-      value: 
-      objectReference: {fileID: 1442713284}
-    - target: {fileID: 7722794754738778145, guid: 9330e8a1d58cb254181ee94856daa43c,
-        type: 3}
-=======
     m_TransformParent: {fileID: 2017627555}
     m_Modifications:
     - target: {fileID: 1045523401450668, guid: 687dae5e9ee4a16418b0e243054e5a2f, type: 3}
@@ -81456,7 +81400,6 @@ PrefabInstance:
       value: True Rain (5)
       objectReference: {fileID: 0}
     - target: {fileID: 4287685998357752, guid: 687dae5e9ee4a16418b0e243054e5a2f, type: 3}
->>>>>>> AudioBranch
       propertyPath: m_LocalPosition.x
       value: 32.38
       objectReference: {fileID: 0}

@@ -13,16 +13,21 @@ public class AmbushController : MonoBehaviour
 
     GameObject lookingAtRoute;
     public NavMeshAgent agent;
+    public GameObject aiBroken;
 
     private void Awake()
     {
         try
         {
-            //agent = GetComponentInParent<NavMeshAgent>();
+            if (!agent.isActiveAndEnabled)
+            {
+                agent = GetComponentInParent<NavMeshAgent>();
+            }
         }
         catch
         {
             print("FAILED TO GET AGENT!");
+            aiBroken.SetActive(true);
         }
     }
 

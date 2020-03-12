@@ -5,6 +5,8 @@ using UnityEngine.AI;
 
 public class SpeedChanger : MonoBehaviour
 {
+    public NavMeshAgent agent;
+
     [Range(0, 100)]
     public float desiredSpeed = 1;
 
@@ -12,7 +14,7 @@ public class SpeedChanger : MonoBehaviour
     {
         try
         {
-            other.GetComponent<NavMeshAgent>().speed = desiredSpeed;
+            agent.speed = desiredSpeed;
         }
         catch (System.Exception)
         {

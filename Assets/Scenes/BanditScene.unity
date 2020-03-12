@@ -460,6 +460,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1330819918}
   m_PrefabAsset: {fileID: 0}
+--- !u!195 &326073402 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: 747023471335102535, guid: 9330e8a1d58cb254181ee94856daa43c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1330819918}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &351149310
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1169,6 +1175,7 @@ MonoBehaviour:
   safeExit: {fileID: 1109936100}
   DangerousRoute: {fileID: 481348841}
   dangerousExit: {fileID: 1176282688}
+  agent: {fileID: 326073402}
 --- !u!1 &999350536
 GameObject:
   m_ObjectHideFlags: 0
@@ -1419,6 +1426,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1109936102}
   - component: {fileID: 1109936101}
+  - component: {fileID: 1109936103}
   m_Layer: 0
   m_Name: SafeExit
   m_TagString: Untagged
@@ -1453,6 +1461,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1109936103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109936100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fde8e7ac24535c44becbeb599593c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desiredSceneIndex: 4
 --- !u!1 &1140615173 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1384994273294688, guid: ac171a0c4d4861345923a2b135b7a83f,
@@ -4603,6 +4624,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 894681359463313970, guid: 7c1d3804064202f4a9c5aaf132a1f2b3,
+        type: 3}
+      propertyPath: agent
+      value: 
+      objectReference: {fileID: 326073402}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c1d3804064202f4a9c5aaf132a1f2b3, type: 3}
 --- !u!1001 &2168632548134860728

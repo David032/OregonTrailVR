@@ -9,6 +9,8 @@ TagManager:
   - WoodenTerrain
   - RockyTerrain
   - Road
+  - Sand
+  - Snow
   layers:
   - Default
   - TransparentFX

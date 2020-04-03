@@ -6,6 +6,11 @@ TagManager:
   tags:
   - InteractableTree
   - Trees
+  - WoodenTerrain
+  - RockyTerrain
+  - Road
+  - Sand
+  - Snow
   layers:
   - Default
   - TransparentFX

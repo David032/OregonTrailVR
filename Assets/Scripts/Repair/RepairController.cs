@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
+using UnityEngine.AI;
 
 public class RepairController : MonoBehaviour
 {
@@ -10,10 +10,14 @@ public class RepairController : MonoBehaviour
     public GameObject jack;
     public GameObject ironBolts;
 
-    bool hasHammer;
-    bool hasNails;
-    bool hasJack;
-    bool hasIronbolts;
+    public GameObject exitPoint;
+
+    public bool hasHammer;
+    public bool hasNails;
+    public bool hasJack;
+    public bool hasIronbolts;
+
+    bool acquringItem = false;
 
     GameObject currentlyLookingAt;
 
@@ -26,16 +30,52 @@ public class RepairController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!acquringItem)
+        {
+            StartCoroutine(acquireItem(currentlyLookingAt));
+        }
+        if (hasHammer && hasNails && hasJack && hasIronbolts)
+        {
+            print("Got everything");
+            GetComponentInParent<NavMeshAgent>().SetDestination(exitPoint.transform.position);
+        }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        currentlyLookingAt = collision.gameObject; 
+    currentlyLookingAt = other.gameObject;
+    print("Am looking at " + currentlyLookingAt);  
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collider other)
     {
-        currentlyLookingAt = null;
+        currentlyLookingAt = null;   
+    }
+
+    IEnumerator acquireItem(GameObject thing) 
+    {
+        acquringItem = true;
+        yield return new WaitForSeconds(4);
+        if (thing == currentlyLookingAt)
+        {
+            if (currentlyLookingAt == hammer)
+            {
+                hasHammer = true;
+            }
+            else if (currentlyLookingAt == nails)
+            {
+                hasNails = true;
+            }
+            else if (currentlyLookingAt == jack)
+            {
+                hasJack = true;
+            }
+            else if (currentlyLookingAt == ironBolts)
+            {
+                hasIronbolts = true;
+            }
+        }
+        acquringItem = false;
+        yield return new WaitForSeconds(1);
     }
 }

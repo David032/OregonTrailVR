@@ -14378,22 +14378,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1862550614}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1137270786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1137270785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d9143eea0c046947b6aabdad7e37d2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerAgent: {fileID: 1137270789}
-  wagonAudio:
-  - {fileID: 8300000, guid: 961f35f4db3729449822ddee25cbef7c, type: 3}
-  wagonSource: {fileID: 1834829691}
 --- !u!195 &1137270789 stripped
 NavMeshAgent:
   m_CorrespondingSourceObject: {fileID: 747023471335102535, guid: 9330e8a1d58cb254181ee94856daa43c,
@@ -21753,81 +21737,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c4ed3a4489024f4d99e53011a9f24b0, type: 3}
---- !u!1001 &1834829690
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1137270794}
-    m_Modifications:
-    - target: {fileID: 1646587487328461537, guid: 679d866a1f97a5743a58a79e461b5834,
-        type: 3}
-      propertyPath: m_Name
-      value: WagonAudio
-      objectReference: {fileID: 0}
-    - target: {fileID: 1646587487328461542, guid: 679d866a1f97a5743a58a79e461b5834,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 1646587487328461542, guid: 679d866a1f97a5743a58a79e461b5834,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.6017858
-      objectReference: {fileID: 0}
-    - target: {fileID: 1646587487328461542, guid: 679d866a1f97a5743a58a79e461b5834,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.14
-      objectReference: {fileID: 0}
-    - target: {fileID: 1646587487328461542, guid: 679d866a1f97a5743a58a79e461b5834,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1646587487328461542, guid: 679d866a1f97a5743a58a79e461b5834,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1646587487328461542, guid: 679d866a1f97a5743a58a79e461b5834,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1646587487328461542, guid: 679d866a1f97a5743a58a79e461b5834,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1646587487328461542, guid: 679d866a1f97a5743a58a79e461b5834,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1646587487328461542, guid: 679d866a1f97a5743a58a79e461b5834,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1646587487328461542, guid: 679d866a1f97a5743a58a79e461b5834,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1646587487328461542, guid: 679d866a1f97a5743a58a79e461b5834,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 679d866a1f97a5743a58a79e461b5834, type: 3}
---- !u!82 &1834829691 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 1646587487328461540, guid: 679d866a1f97a5743a58a79e461b5834,
-    type: 3}
-  m_PrefabInstance: {fileID: 1834829690}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1835717678
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22538,28 +22447,24 @@ PrefabInstance:
       propertyPath: targetPoint
       value: 
       objectReference: {fileID: 1578433682}
+    - target: {fileID: 1270187026166443573, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: wagonAudio.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270187026166443573, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: wagonAudio.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 961f35f4db3729449822ddee25cbef7c, type: 3}
+    - target: {fileID: 2313184115906416332, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2631545408777287960, guid: 9330e8a1d58cb254181ee94856daa43c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9330e8a1d58cb254181ee94856daa43c, type: 3}
---- !u!1 &1862550615 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7726360105348603013, guid: 9330e8a1d58cb254181ee94856daa43c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1862550614}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1862550616
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1862550615}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.25650853, y: 2.3103201, z: 1.2291658}
-  m_Center: {x: -0.0000031739473, y: -0.54057753, z: 0.0000013113022}
 --- !u!1 &1867849537
 GameObject:
   m_ObjectHideFlags: 0
@@ -25240,7 +25145,7 @@ PrefabInstance:
     - target: {fileID: 3195636339325901306, guid: dd1b1f9d60478104398b52a6d71da8a0,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3195636339325901309, guid: dd1b1f9d60478104398b52a6d71da8a0,
         type: 3}

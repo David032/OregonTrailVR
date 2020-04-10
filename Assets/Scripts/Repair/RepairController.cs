@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class RepairController : BaseEvent
+public class RepairController : MonoBehaviour
 {
     public GameObject hammer;
     public GameObject nails;

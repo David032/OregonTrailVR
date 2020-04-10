@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class AmbushController : MonoBehaviour
+public class AmbushController : BaseEvent
 {
     public GameObject SafeRoute;
     public GameObject safeExit;

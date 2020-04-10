@@ -5530,6 +5530,7 @@ GameObject:
   - component: {fileID: 3229153872549075521}
   - component: {fileID: 7084484817611985266}
   - component: {fileID: 2631545408777287960}
+  - component: {fileID: 6597907945815141044}
   m_Layer: 0
   m_Name: ViewBox
   m_TagString: Untagged
@@ -5576,6 +5577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4a03ec8b423fab46bbb18fd3b1cf928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amAtChallengePoint: 0
   bridge: {fileID: 0}
   exitPoint: {fileID: 0}
   agent: {fileID: 0}
@@ -5584,6 +5586,19 @@ MonoBehaviour:
   compainion: {fileID: 0}
   treeChop: {fileID: 0}
   warpingFixPoint: {fileID: 0}
+--- !u!114 &6597907945815141044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7112108478970308664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19876317c8091294f804563498dc12cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amActive: 0
 --- !u!1 &7425873008763607283
 GameObject:
   m_ObjectHideFlags: 0
@@ -6420,9 +6435,9 @@ GameObject:
   - component: {fileID: 7731473430135980801}
   - component: {fileID: 7741663646530553527}
   - component: {fileID: 5466549825203751972}
-  - component: {fileID: 7437956944150727711}
   - component: {fileID: 747023471335102535}
   - component: {fileID: 8642620538887144629}
+  - component: {fileID: 7061213878518218692}
   - component: {fileID: 3657332058909903744}
   - component: {fileID: 7059657940855633861}
   - component: {fileID: 1270187026166443573}
@@ -6519,19 +6534,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LeftHorse: {fileID: 3079539802156736219}
   RightHorse: {fileID: 5329958096881645930}
---- !u!114 &7437956944150727711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7726778018493325883}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11ed254081cf8244aae6163756259b25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetPoint: {fileID: 0}
 --- !u!195 &747023471335102535
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6564,6 +6566,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c333deb4ddcaf5439a5488a8151f6a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPoint: {fileID: 0}
+--- !u!114 &7061213878518218692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7726778018493325883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fce8fc34595dc46419bfdf8307ab03c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetPoint: {fileID: 0}

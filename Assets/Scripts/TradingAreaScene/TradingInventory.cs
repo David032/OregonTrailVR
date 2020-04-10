@@ -23,7 +23,7 @@ public enum TradeableGoods
 }
 
 
-public class TradingInventory : MonoBehaviour
+public class TradingInventory : BaseEvent
 {
     [Header("Core bits")]
     public NavMeshAgent agent;

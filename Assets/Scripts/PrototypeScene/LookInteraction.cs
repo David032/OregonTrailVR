@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class LookInteraction : MonoBehaviour
+public class LookInteraction : BaseEvent
 {
     public GameObject bridge;
     public GameObject exitPoint;
@@ -21,16 +21,15 @@ public class LookInteraction : MonoBehaviour
         if (other.gameObject.tag == "InteractableTree")
         {
             other.gameObject.SetActive(false);
-
-            print("Interacted");
             treeChop.Play();
             bridge.SetActive(true);
-            agent.SetDestination(exitPoint.transform.position);
-            print(agent.destination);
-            player.GetComponent<Stage2>().enabled = true;
+
             compainion.clip = challengeAudio;
             compainion.Play();
-            agent.Warp(warpingFixPoint.transform.position);
+
+            exitController.enabled = true;
+            GetComponentInParent<NavMeshAgent>().Warp(warpingFixPoint.transform.position);
+
         }
     }
 }

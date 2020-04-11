@@ -1926,6 +1926,16 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 125441805699087011, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 326073398}
+    - target: {fileID: 125441805699087011, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: challengeLocation
+      value: 
+      objectReference: {fileID: 999350536}
     m_RemovedComponents:
     - {fileID: 2631545408777287960, guid: 9330e8a1d58cb254181ee94856daa43c, type: 3}
     - {fileID: 7437956944150727711, guid: 9330e8a1d58cb254181ee94856daa43c, type: 3}

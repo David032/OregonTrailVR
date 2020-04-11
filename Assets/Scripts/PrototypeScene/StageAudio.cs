@@ -20,7 +20,7 @@ public class StageAudio : MonoBehaviour
     void Update()
     {
         CheckStatus();
-        Debug.Log(PlayerAgent.speed);
+        //Debug.Log(PlayerAgent.speed);
     }
 
     private void OnCollisionEnter (Collision other)
@@ -30,7 +30,7 @@ public class StageAudio : MonoBehaviour
             if (other.gameObject.tag == currentClip.name)
             {
                 wagonSource.clip = wagonAudio[System.Array.IndexOf(wagonAudio, currentClip)];
-                Debug.Log("Travelling on " + currentClip.name);
+                //Debug.Log("Travelling on " + currentClip.name);
 
                 if (other.gameObject.tag == "Snow")
                 {
@@ -72,7 +72,7 @@ public class StageAudio : MonoBehaviour
                 //wagonSource.clip = wagonAudio[1];
             }
         }
-        Debug.Log(PlayerAgent.isStopped);
-        Debug.Log(wagonSource.clip);
+        //Debug.Log(PlayerAgent.isStopped);
+        //Debug.Log(wagonSource.clip);
     }
 }

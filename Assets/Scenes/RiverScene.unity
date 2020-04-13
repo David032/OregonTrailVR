@@ -35019,6 +35019,26 @@ PrefabInstance:
       propertyPath: targetPoint
       value: 
       objectReference: {fileID: 1537146007400208}
+    - target: {fileID: 1270187026166443573, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: wagonAudio.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270187026166443573, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: wagonAudio.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 67d59c85a74464a4b9b20a9d09f0fc47, type: 3}
+    - target: {fileID: 1270187026166443573, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: wagonAudio.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8057a6897c7c9db48917298a2e6d4f0e, type: 3}
+    - target: {fileID: 1270187026166443573, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: wagonAudio.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 23105db144f03d449b477f58f68401ed, type: 3}
     - target: {fileID: 2631545408777287960, guid: 9330e8a1d58cb254181ee94856daa43c,
         type: 3}
       propertyPath: warpingFixPoint
@@ -35069,26 +35089,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1270187026166443573, guid: 9330e8a1d58cb254181ee94856daa43c,
+    - target: {fileID: 125441805699087011, guid: 9330e8a1d58cb254181ee94856daa43c,
         type: 3}
-      propertyPath: wagonAudio.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270187026166443573, guid: 9330e8a1d58cb254181ee94856daa43c,
-        type: 3}
-      propertyPath: wagonAudio.Array.data[0]
+      propertyPath: challengeLocation
       value: 
-      objectReference: {fileID: 8300000, guid: 67d59c85a74464a4b9b20a9d09f0fc47, type: 3}
-    - target: {fileID: 1270187026166443573, guid: 9330e8a1d58cb254181ee94856daa43c,
+      objectReference: {fileID: 1537146007400208}
+    - target: {fileID: 125441805699087011, guid: 9330e8a1d58cb254181ee94856daa43c,
         type: 3}
-      propertyPath: wagonAudio.Array.data[1]
+      propertyPath: player
       value: 
-      objectReference: {fileID: 8300000, guid: 8057a6897c7c9db48917298a2e6d4f0e, type: 3}
-    - target: {fileID: 1270187026166443573, guid: 9330e8a1d58cb254181ee94856daa43c,
-        type: 3}
-      propertyPath: wagonAudio.Array.data[2]
-      value: 
-      objectReference: {fileID: 8300000, guid: 23105db144f03d449b477f58f68401ed, type: 3}
+      objectReference: {fileID: 1868715495}
     m_RemovedComponents:
     - {fileID: 3657332058909903744, guid: 9330e8a1d58cb254181ee94856daa43c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9330e8a1d58cb254181ee94856daa43c, type: 3}
@@ -84823,6 +84833,11 @@ PrefabInstance:
         type: 3}
       propertyPath: pathToTake
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4757676903438224234, guid: 59db27bb9a903734cad7a147c6debd0d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59db27bb9a903734cad7a147c6debd0d, type: 3}

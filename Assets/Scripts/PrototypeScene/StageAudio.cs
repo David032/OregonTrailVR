@@ -64,15 +64,15 @@ public class StageAudio : MonoBehaviour
         {
             if (PlayerAgent.speed == 2)
             {
-                //wagonSource.clip = wagonAudio[0];
+                wagonSource.clip = wagonAudio[0];
             }
 
-            else if (PlayerAgent.speed == 10)
+            else if (PlayerAgent.speed > 2)
             {
-                //wagonSource.clip = wagonAudio[1];
+                wagonSource.clip = wagonAudio[1];
             }
         }
-        //Debug.Log(PlayerAgent.isStopped);
+        Debug.Log(PlayerAgent.isStopped);
         //Debug.Log(wagonSource.clip);
     }
 }

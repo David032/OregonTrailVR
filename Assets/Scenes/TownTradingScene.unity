@@ -22456,11 +22456,11 @@ PrefabInstance:
         type: 3}
       propertyPath: wagonAudio.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 961f35f4db3729449822ddee25cbef7c, type: 3}
+      objectReference: {fileID: 8300000, guid: eb511c8618266c146a42e38940f1f1a4, type: 3}
     - target: {fileID: 2313184115906416332, guid: 9330e8a1d58cb254181ee94856daa43c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 125441805699087011, guid: 9330e8a1d58cb254181ee94856daa43c,
         type: 3}

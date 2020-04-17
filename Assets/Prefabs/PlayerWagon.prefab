@@ -5598,6 +5598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   challengeLocation: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &7425873008763607283
 GameObject:
   m_ObjectHideFlags: 0
@@ -7614,6 +7615,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8136411393754349736, guid: 679d866a1f97a5743a58a79e461b5834,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2aed1c1a1d7f62342b010b5ce512df33, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 679d866a1f97a5743a58a79e461b5834, type: 3}
 --- !u!4 &2313184115906416332 stripped

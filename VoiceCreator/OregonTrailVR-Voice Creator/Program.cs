@@ -6,8 +6,12 @@ using System.IO;
 
 namespace OregonTrailVR
 {
+
     class Program
     {
+        public static bool useNeuralLanguage = false; //Keep this on false, the neural version doesn't work
+
+
         static string path = "Output";
         static string fileName;
         static string fileContents;
@@ -27,6 +31,7 @@ namespace OregonTrailVR
                     {
                         Console.WriteLine($"Speech synthesized to [{audioFileName}] for text [{text}]");
                         File.Copy(audioFileName, path + "/" + audioFileName);
+
                         Console.WriteLine("Press 'y' to create another file, else press 'n' to quit");
                         string input = Console.ReadLine();
                         if (input == "y")
@@ -50,6 +55,18 @@ namespace OregonTrailVR
                     }
                 }
             }
+        }
+
+        public static async Task SynthesizeAudioAsync()
+        {
+            var config = SpeechConfig.FromSubscription("7a21490acf47414aa0d79dfb5f483183", "westeurope");
+            using var synthesizer = new SpeechSynthesizer(config, null);
+
+            var ssml = File.ReadAllText("./ssml-Aria.xml");
+            var result = await synthesizer.SpeakSsmlAsync(ssml);
+
+            using var stream = AudioDataStream.FromResult(result);
+            await stream.SaveToWaveFileAsync(fileName);
         }
 
         private static void createDirectory()
@@ -83,7 +100,14 @@ namespace OregonTrailVR
         private static void createAudioFile()
         {
             getInput();
-            SynthesisToAudioFileAsync().Wait();
+            if (useNeuralLanguage)
+            {
+                SynthesizeAudioAsync().Wait();
+            }
+            else
+            {
+                SynthesisToAudioFileAsync().Wait();
+            }
         }
     }
 }

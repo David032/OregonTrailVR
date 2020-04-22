@@ -7,7 +7,7 @@ public class ViewboxController : MonoBehaviour
     public GameObject challengeLocation;
     BoxCollider viewbox;
     public GameObject player;
-    public bool isMoving;
+    public bool isMoving = true;
 
     void Start()
     {

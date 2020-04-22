@@ -18916,6 +18916,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1578433683}
+  - component: {fileID: 1578433684}
   m_Layer: 0
   m_Name: TradingPoint
   m_TagString: Untagged
@@ -18937,6 +18938,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1578433684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578433682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ea503b40bd452140a7b56ade9428cd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  challengeAudio: {fileID: 8300000, guid: a59665c4a10476d44ab261734292aa8a, type: 3}
+  exitAudio: {fileID: 8300000, guid: ecafb56c532938a4db81dd01e5a2693b, type: 3}
+  compainion: {fileID: 1860670334}
+  player: {fileID: 1860971198}
 --- !u!1001 &1581847566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22275,6 +22292,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1858050777}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1860670334 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1170010624462436825, guid: 9330e8a1d58cb254181ee94856daa43c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1862550614}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1860971195 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7112108478970308664, guid: 9330e8a1d58cb254181ee94856daa43c,
@@ -22305,6 +22328,18 @@ MonoBehaviour:
   MedicalTrader: {fileID: 1349335431}
   ToolTrader: {fileID: 1648771969}
   BoozeTrader: {fileID: 146210473}
+--- !u!114 &1860971198 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 125441805699087011, guid: 9330e8a1d58cb254181ee94856daa43c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1862550614}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860971195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ef74fcff5576d643a15b86cda513777, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1861084160
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22472,6 +22507,11 @@ PrefabInstance:
       propertyPath: challengeLocation
       value: 
       objectReference: {fileID: 1578433682}
+    - target: {fileID: 1170010624462436825, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 004f01e6e5627124f86c9f2e8a5079d7, type: 3}
     m_RemovedComponents:
     - {fileID: 2631545408777287960, guid: 9330e8a1d58cb254181ee94856daa43c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9330e8a1d58cb254181ee94856daa43c, type: 3}

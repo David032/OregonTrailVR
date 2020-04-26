@@ -32,6 +32,7 @@ public class RepairController : MonoBehaviour
     {
         if (!acquringItem)
         {
+            print("Attempting to acquire " + currentlyLookingAt);
             StartCoroutine(acquireItem(currentlyLookingAt));
         }
         if (hasHammer && hasNails && hasJack && hasIronbolts)
@@ -55,7 +56,7 @@ public class RepairController : MonoBehaviour
     IEnumerator acquireItem(GameObject thing) 
     {
         acquringItem = true;
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(2);
         if (thing == currentlyLookingAt)
         {
             if (currentlyLookingAt == hammer)
@@ -76,6 +77,6 @@ public class RepairController : MonoBehaviour
             }
         }
         acquringItem = false;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
     }
 }

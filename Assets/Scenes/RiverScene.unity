@@ -35039,6 +35039,16 @@ PrefabInstance:
       propertyPath: wagonAudio.Array.data[2]
       value: 
       objectReference: {fileID: 8300000, guid: 23105db144f03d449b477f58f68401ed, type: 3}
+    - target: {fileID: 125441805699087011, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: challengeLocation
+      value: 
+      objectReference: {fileID: 1537146007400208}
+    - target: {fileID: 125441805699087011, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1868715495}
     - target: {fileID: 2631545408777287960, guid: 9330e8a1d58cb254181ee94856daa43c,
         type: 3}
       propertyPath: warpingFixPoint
@@ -35074,6 +35084,11 @@ PrefabInstance:
       propertyPath: treeChop
       value: 
       objectReference: {fileID: 2093978903}
+    - target: {fileID: 2631545408777287960, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: challengeAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 79635c8ee9a434f48b72aaa1d8aee121, type: 3}
     - target: {fileID: 7727577215663463373, guid: 9330e8a1d58cb254181ee94856daa43c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35084,21 +35099,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 1.3
       objectReference: {fileID: 0}
+    - target: {fileID: 1170010624462436825, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6448d66296e377e48839e33ae843c6fa, type: 3}
     - target: {fileID: 7684786681989683421, guid: 9330e8a1d58cb254181ee94856daa43c,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 125441805699087011, guid: 9330e8a1d58cb254181ee94856daa43c,
-        type: 3}
-      propertyPath: challengeLocation
-      value: 
-      objectReference: {fileID: 1537146007400208}
-    - target: {fileID: 125441805699087011, guid: 9330e8a1d58cb254181ee94856daa43c,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1868715495}
     m_RemovedComponents:
     - {fileID: 3657332058909903744, guid: 9330e8a1d58cb254181ee94856daa43c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9330e8a1d58cb254181ee94856daa43c, type: 3}
@@ -70158,7 +70168,7 @@ MonoBehaviour:
   PlayerAgent: {fileID: 1868715501}
   agent: {fileID: 1868715501}
   Player: {fileID: 1868715495}
-  challengeAudio: {fileID: 8300000, guid: 3ae3db803e72bfc4d819ecfce9da3e20, type: 3}
+  challengeAudio: {fileID: 8300000, guid: 19dc718e86e1fa64caeb501661ebd597, type: 3}
   compainion: {fileID: 3481454176323940472}
 --- !u!65 &1759838867
 BoxCollider:

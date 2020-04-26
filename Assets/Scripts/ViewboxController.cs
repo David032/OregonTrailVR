@@ -7,6 +7,7 @@ public class ViewboxController : MonoBehaviour
     public GameObject challengeLocation;
     BoxCollider viewbox;
     public GameObject player;
+    public bool isMoving = true;
 
     void Start()
     {
@@ -18,10 +19,12 @@ public class ViewboxController : MonoBehaviour
         if (Vector3.Distance(player.transform.position, challengeLocation.transform.position) > 5)
         {
             viewbox.enabled = false;
+            isMoving = true;
         }
         else
         {
             viewbox.enabled = true;
+            isMoving = false;
         }
     }
 

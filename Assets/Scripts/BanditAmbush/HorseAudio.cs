@@ -9,6 +9,7 @@ public class HorseAudio : MonoBehaviour
     public AudioClip[] horseAudio;
     public AudioSource horseAudioSource;
     private bool horseIsNeighing;
+    public GameObject playerWagon;
 
     void Start()
     {
@@ -25,7 +26,18 @@ public class HorseAudio : MonoBehaviour
 
     IEnumerator Neigh()
     {
-        float waitingFor = Random.Range(3.0f, 5.5f);
+        float waitingFor; 
+
+        if (playerWagon.GetComponent<StageAudio>().hasStopped == false)
+        {
+            waitingFor = Random.Range(3.0f, 6.5f);
+        }
+
+        else
+        {
+            waitingFor = Random.Range(7.0f, 13.0f);
+        }
+
         int pickNeigh = Random.Range(0, 5);
         horseAudioSource.clip = horseAudio[pickNeigh];
         horseAudioSource.Play();

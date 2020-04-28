@@ -16,6 +16,7 @@ public class RepairController : MonoBehaviour
     public bool hasNails;
     public bool hasJack;
     public bool hasIronbolts;
+    public bool gotEverything;
 
     bool acquringItem = false;
 
@@ -37,6 +38,7 @@ public class RepairController : MonoBehaviour
         if (hasHammer && hasNails && hasJack && hasIronbolts)
         {
             print("Got everything");
+            gotEverything = true;
             GetComponentInParent<NavMeshAgent>().SetDestination(exitPoint.transform.position);
         }
     }

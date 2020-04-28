@@ -1381,6 +1381,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 764a27a782e19a64e93f7754fa6cc96c, type: 3}
   - {fileID: 8300000, guid: c0bb16030dfa23c428ae15a3f5347d5c, type: 3}
   horseAudioSource: {fileID: 572272043}
+  playerWagon: {fileID: 326073398}
 --- !u!1001 &626727171
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2517,11 +2518,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerWagon
       objectReference: {fileID: 0}
-    - target: {fileID: 747023471335102535, guid: 9330e8a1d58cb254181ee94856daa43c,
-        type: 3}
-      propertyPath: m_Speed
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 7722794754738778145, guid: 9330e8a1d58cb254181ee94856daa43c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2577,6 +2573,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1170010624462436825, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5d7233453b8074a4d8592b0f09ecc568, type: 3}
+    - target: {fileID: 747023471335102535, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: m_Speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8642620538887144629, guid: 9330e8a1d58cb254181ee94856daa43c,
         type: 3}
       propertyPath: targetPoint
@@ -2612,11 +2618,6 @@ PrefabInstance:
       propertyPath: challengeLocation
       value: 
       objectReference: {fileID: 999350536}
-    - target: {fileID: 1170010624462436825, guid: 9330e8a1d58cb254181ee94856daa43c,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 5d7233453b8074a4d8592b0f09ecc568, type: 3}
     m_RemovedComponents:
     - {fileID: 2631545408777287960, guid: 9330e8a1d58cb254181ee94856daa43c, type: 3}
     - {fileID: 7437956944150727711, guid: 9330e8a1d58cb254181ee94856daa43c, type: 3}
@@ -5437,6 +5438,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 781766175963024581, guid: 30f9b2192c3d9ba449f5dbe2fbd62aab,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -66.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30f9b2192c3d9ba449f5dbe2fbd62aab, type: 3}

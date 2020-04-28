@@ -809,6 +809,11 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 6476d8fdd30567f48bd93250c0c0839a, type: 3}
+    - target: {fileID: 1170010624462436825, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6476d8fdd30567f48bd93250c0c0839a, type: 3}
     - target: {fileID: 7722794754738778145, guid: 9330e8a1d58cb254181ee94856daa43c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -864,11 +869,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1170010624462436825, guid: 9330e8a1d58cb254181ee94856daa43c,
+    - target: {fileID: 8642620538887144629, guid: 9330e8a1d58cb254181ee94856daa43c,
         type: 3}
-      propertyPath: m_audioClip
+      propertyPath: targetPoint
       value: 
-      objectReference: {fileID: 8300000, guid: 6476d8fdd30567f48bd93250c0c0839a, type: 3}
+      objectReference: {fileID: 741936263}
     - target: {fileID: 8642620538887144629, guid: 9330e8a1d58cb254181ee94856daa43c,
         type: 3}
       propertyPath: targetPoint
@@ -902,11 +907,6 @@ PrefabInstance:
     - target: {fileID: 125441805699087011, guid: 9330e8a1d58cb254181ee94856daa43c,
         type: 3}
       propertyPath: challengeLocation
-      value: 
-      objectReference: {fileID: 741936263}
-    - target: {fileID: 8642620538887144629, guid: 9330e8a1d58cb254181ee94856daa43c,
-        type: 3}
-      propertyPath: targetPoint
       value: 
       objectReference: {fileID: 741936263}
     m_RemovedComponents:
@@ -2784,6 +2784,7 @@ GameObject:
   m_Component:
   - component: {fileID: 827010829}
   - component: {fileID: 827010830}
+  - component: {fileID: 827010831}
   m_Layer: 0
   m_Name: ExitPoint
   m_TagString: Untagged
@@ -2799,7 +2800,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 827010828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -104.50603, y: 7.8030806, z: -6.0576153}
+  m_LocalPosition: {x: -104.50603, y: 7.8030806, z: -1.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2819,6 +2820,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneIndexToLoad: 0
   autoCalculateIndex: 1
+--- !u!65 &827010831
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827010828}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &844746412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4195,6 +4209,7 @@ MonoBehaviour:
   hasNails: 0
   hasJack: 0
   hasIronbolts: 0
+  gotEverything: 0
 --- !u!1001 &1327206530
 PrefabInstance:
   m_ObjectHideFlags: 0

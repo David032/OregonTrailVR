@@ -804,6 +804,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerWagon
       objectReference: {fileID: 0}
+    - target: {fileID: 1170010624462436825, guid: 9330e8a1d58cb254181ee94856daa43c,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6476d8fdd30567f48bd93250c0c0839a, type: 3}
     - target: {fileID: 7722794754738778145, guid: 9330e8a1d58cb254181ee94856daa43c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -899,11 +904,11 @@ PrefabInstance:
       propertyPath: challengeLocation
       value: 
       objectReference: {fileID: 741936263}
-    - target: {fileID: 75763848948854163, guid: 9330e8a1d58cb254181ee94856daa43c,
+    - target: {fileID: 8642620538887144629, guid: 9330e8a1d58cb254181ee94856daa43c,
         type: 3}
-      propertyPath: m_audioClip
+      propertyPath: targetPoint
       value: 
-      objectReference: {fileID: 8300000, guid: 91322747b845f9c4baf526bfc161b8fb, type: 3}
+      objectReference: {fileID: 741936263}
     m_RemovedComponents:
     - {fileID: 2631545408777287960, guid: 9330e8a1d58cb254181ee94856daa43c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9330e8a1d58cb254181ee94856daa43c, type: 3}
@@ -4013,10 +4018,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1.9099951
+  m_Radius: 0.9627333
+  m_Height: 2.5048304
   m_Direction: 1
-  m_Center: {x: -0.00000011888402, y: 0.20661044, z: -0.019922823}
+  m_Center: {x: -0.0000001193233, y: 0.5040281, z: 0.027318597}
 --- !u!1001 &1262131198
 PrefabInstance:
   m_ObjectHideFlags: 0
